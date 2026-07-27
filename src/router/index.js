@@ -4,12 +4,9 @@ import Home from '../components/HelloWorld.vue'
 Vue.use(VueRouter)
 const routes = [{
         path: '/',
-        redirect: '/home'
+        component: Home,
+        alias: '/home'
     },
-    {
-        path: '/home',
-        component: Home
-    }
 ]
 const routers = new VueRouter({
     routes
